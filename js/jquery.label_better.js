@@ -54,7 +54,7 @@
       
       case 'bottom':
         posx = 0;
-        posy = ($(this).height() + settings.offset);
+        posy = ($(this).height() + settings.offset) - 1;
         
         $(this).css({
           "bottom": "0",

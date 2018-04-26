@@ -1097,9 +1097,9 @@ a:focus,
       height:44px;
       max-height:44px;
       min-height:44px;
-      width:207px;
-      max-width:207px;
-      min-width:207px;
+      width:300px;
+      max-width:300px;
+      min-width:300px;
       padding: 10px 15px;
       border-radius: 25px;
       font-size: 16px;
@@ -1107,10 +1107,18 @@ a:focus,
       vertical-align:middle;
     }
 
+    .bl_form .messageField {
+        height: 120px;
+        max-height:120px;
+        min-height:120px;
+        width:600px;
+        max-width:600px;
+        min-width:600px;
+    }
 
     .lb_wrap .lb_label.top, .lb_wrap .lb_label.bottom {
       left: 15px !important;
-	  z-index:1;
+      z-index:1;
     }
 
     .lb_wrap .lb_label.left {
@@ -1126,7 +1134,7 @@ a:focus,
 
     .lb_label.active {
       color: #FFF;
-	  z-index:1;
+      z-index:1;
     }
 	
 .no-placeholder .lb_label {
@@ -1141,7 +1149,7 @@ a:focus,
     display:inline-block;
     position:relative;
     vertical-align:top;
-    margin-bottom:60px;
+    margin-bottom:30px;
 }
 
 #contact-form .field-wrap .error-message{
