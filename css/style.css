@@ -1,0 +1,16 @@
+.skillsFlexArea {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skillsIconContainer {
+    width: 90px;
+    margin: 20px !important;
+    text-align: center;
+}
+
+.skillsIconImage {
+    width: 100%;
+    height: 62%;
+}
