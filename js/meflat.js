@@ -204,10 +204,10 @@ $(document).ready(function() {
 	Contact Form
 	==============================================*/
 	
-	$(".label_better").label_better({
-	  easing: "bounce",
-	  offset:5
-	});
+	// $(".label_better").label_better({
+	//   easing: "bounce",
+	//   offset:5
+	// });
 
 	/*============================================
 	Tooltips
