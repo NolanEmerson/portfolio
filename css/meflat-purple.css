@@ -1113,7 +1113,7 @@ a:focus,
         min-height:120px;
         width:600px;
         max-width:600px;
-        min-width:600px;
+        min-width:300px;
     }
 
     .lb_wrap .lb_label.top, .lb_wrap .lb_label.bottom {
@@ -1411,6 +1411,10 @@ a:focus,
     
     .section-header h1{
         font-size:38px;
+    }
+
+    .bl_form .messageField {
+        width: 300px;
     }
 }
 
