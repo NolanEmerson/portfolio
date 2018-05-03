@@ -28,12 +28,13 @@ if(empty($message['comments'])){
 
 if ($output['success'] !== null){
     http_response_code(400);
-    echo json_encode($output);
+    // echo json_encode($output);
+    echo 'There was an error contacting the server. Please try again at a later time.';
     exit();
 }
 
 $mail = new PHPMailer;
-$mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
+$mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $mail->isSMTP();                // Set mailer to use SMTP.
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.
@@ -77,8 +78,10 @@ $mail->AltBody = htmlentities($message['comments']);
 if(!$mail->send()) {
     $output['success'] = false;
     $output['messages'][] = $mail->ErrorInfo;
+    echo 'There was an error with the server. Please try again at a later time.';
 } else {
     $output['success'] = true;
+    echo 'Message sent successfully! Thank you!';
 }
-echo json_encode($output);
+// echo json_encode($output);
 ?>
