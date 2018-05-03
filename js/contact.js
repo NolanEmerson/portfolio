@@ -56,6 +56,13 @@ $(document).ready(function() {
 					$('#contact-form').removeClass('clicked');
 				},2000);
 				
+			}).fail ( function (xhr, textStatus, errorThrown) {
+				$('#contact-form button').html('<i class="fa fa-times"></i>'+'Server Error!');
+				setTimeout(function(){
+					$('#contact-form button').html(buttonCopy);
+					$('#contact-form button').width('auto');
+					$('#contact-form').removeClass('clicked');
+				},2000);
 			});
 		}
 		
