@@ -1,4 +1,21 @@
 $(document).ready(function() {
+
+	$('#contact-form span input').focus(function(){
+		$(this).siblings('.error-message').hide();
+	});
+
+	$('#contact-form span textarea').focus(function(){
+		$(this).siblings('.error-message').hide();
+	});
+
+	// $('#contact-form span input').focusout(function(){
+	// 	$(this).siblings('.error-message').show();
+	// });
+
+	// $('#contact-form span textarea').focusout(function(){
+	// 	$(this).siblings('.error-message').show();
+	// });
+
 	$('#contact-form').submit(function() {
 		
 		if($('#contact-form').hasClass('clicked')){

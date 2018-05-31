@@ -19,6 +19,14 @@ $(document).ready(function() {
 		}
 	});
 	
+	$('body').on('click', function(){
+		$('.navbar-collapse').collapse('hide');
+	})
+
+	$(window).on('scroll', function(){
+		$('.navbar-collapse').collapse('hide');
+	});
+
 	/*============================================
 	Header Functions
 	==============================================*/
